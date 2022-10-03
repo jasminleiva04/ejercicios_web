@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="checkbox" id="checkbox1" name="checkbox1"> confirma los terminos y condiciones?
+    <br>
+    <input type="button" id="boton1" name="boton1" value="confirmar" disabled>
+    <script>
+        document.getElementById('checkbox1').addEventListener('change', seleccion);
+        function seleccion(){
+            if (document.getElementById('checkbox1').checked == true){
+                document.getElementById('boton1').disabled = false;
+            } else {
+              document.getElementById('boton1').disabled = true;  
+            }
+                
+            
+        }
+    </script>
+</body>
+</html>

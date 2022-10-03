@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let negativos = 0;
+        let positivos = 0;
+        let multi15 = 0;
+        let sumapares = 0;
+        for (let x = 1; x <= 10; x++){
+            let valor = parseInt(prompt('ingrese un valor: '));
+            if (valor < 0){
+                negativos++;
+            } else {
+                if (valor > 0){
+                    positivos++;
+                }
+            }
+            if (valor % 15 == 0 && valor !=0){
+                multi15++;
+            }
+            if (valor % 2 == 0){
+                sumapares = sumapares + valor;
+            }
+        }
+        document.write('cantidad de valores negativos: ' + negativos + ' <br>');
+        document.write('cantidad de valores positivos: ' + positivos + ' <br>');
+        document.write('cantidad de multiplos de 15: ' + multi15 + '<br>');
+        document.write('suma de los valores pares: ' + sumapares + '<br>');
+    </script>
+    
+</body>
+</html>
